@@ -51,3 +51,15 @@ wolfy.splice(0, 1, "Gameboy");
 console.log(wolfy);
 console.log(plantee);
 console.log(dart);
+
+
+/////////////////////
+// Yell at the Ninja Turtles
+/////////////////////
+
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
+for (const turtle of ninjaTurtles) {
+  const uppercaseName = turtle.toUpperCase();
+  console.log(uppercaseName);
+}
