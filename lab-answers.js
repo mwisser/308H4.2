@@ -97,3 +97,21 @@ const kittyTalk = [
     }
   }
 
+////////////////////
+// Find the Median
+///////////////////
+
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12, 17, 12, 71, 18, 15, 12];
+
+nums.sort((a, b) => a - b);
+
+const middleIndex = Math.floor(nums.length / 2);
+
+if (nums.length % 2 === 1) {
+    const median = nums[middleIndex];
+    console.log(median);
+  } else {
+    const median = (nums[middleIndex - 1] + nums[middleIndex]) / 2;
+    console.log(median);
+  }
+  
