@@ -68,13 +68,32 @@ for (const turtle of ninjaTurtles) {
 // Where is Waldo
 ////////////////////
 
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", 
-["Lucinda", "Jacc", "Neff", "Snoop"], 
-["Petunia", ["Baked Goods", "Waldo"]]];
+//const whereIsWaldo = [["Timmy", "Frank"], "Eggbert", 
+//["Lucinda", "Jacc", "Neff", "Snoop"], 
+//["Petunia", ["Baked Goods", "Waldo"]]];
 
-whereIsWaldo.splice(1, 1);
+//whereIsWaldo.splice(1, 1);
 
-whereIsWaldo[2][2] = "No One";
+//whereIsWaldo[2][2] = "No One";
 
-console.log(whereIsWaldo[3][1][2]);
+//console.log(whereIsWaldo[3][1][1]);
+
+///////////////////
+// Excited Kitten
+///////////////////
+
+const kittyTalk = [
+    "...human... why you taking pictures of me...",
+    "...the catnip made me do it...",
+    "...why does the red dot always get away...?"
+  ];
+  
+  for (let i = 0; i < 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!");
+  
+    if (i % 2 === 0) {
+      let meow = Math.floor(Math.random() * kittyTalk.length);
+      console.log(kittyTalk[meow]);
+    }
+  }
 
